@@ -1,0 +1,23 @@
+.landing-section{
+    display: flex;
+    justify-content: center;
+    .image-container{
+        position: relative;
+        text-align: center;
+       
+    .land-img{
+        position: relative;
+        max-width: 100%;
+        background-color: rgba(0,0,0,.5);
+        
+     
+       transition: all 0.3s ease-in-out;
+       
+        >h1{
+            position: absolute;
+            left: 16px;
+        }
+       }
+    }
+    }
+    
