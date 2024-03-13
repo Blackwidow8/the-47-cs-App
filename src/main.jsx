@@ -44,7 +44,7 @@ const paths = createBrowserRouter([
     element:<Account/>
   },
   {
-    path:"/county",
+    path:"/county/:id",
     element:<County/>
   }
 ]);

@@ -1,20 +1,16 @@
+import { Link } from 'react-router-dom';
 import data from '../../kenya-counties-subcounties/counties.json'
 
 import React, { useState } from "react";
 
-const result = [
-counties.json
-];
-
 const Card=() =>{
-  const [counties, setCounties] = useState(data);
 
   return (
     <div className="App">
       <h1>Counties in Kenya</h1>
       <ul>
-        {counties.map((county) => (
-          <li key={county.name}>
+        {data.map((county) => (
+          <li key={county.code}>
             <h2>{county.name}</h2>
             <p>Capital: {county.capital}</p>
             <p>Code: {county.code}</p>
@@ -24,10 +20,13 @@ const Card=() =>{
                 <li key={index}>{subCounty}</li>
               ))}
             </ul>
+            <Link to={`/county/${county.code}`} state={county.name}>Show County</Link>
+
           </li>
         ))}
       </ul>
     </div>
+    
   );
 }
 

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import {supabase} from '../../utils/supabaseConfig'
 import './Register.css'
+import Image from '../../assets/reg.jpg'
 
 const Signup = ()=> {
   const [FirstName, setFirstName] = useState('')
@@ -34,7 +35,7 @@ const Signup = ()=> {
     return (
       <div className="signUp-section">
         <div className="container">
-          <div className="main-grid">
+          <div className="left-container">
           <form onSubmit={signUpNewUser}>
             <h2>Register</h2>
             <label>FirstName:</label>
@@ -52,14 +53,19 @@ const Signup = ()=> {
 
             <button type="submit">Submit</button>
             </form>
+          
           </div>
+          <div className="right-container">
+<div className="login-img">
+        <img src={Image}/>
+    </div>
         
         </div>
        
-        
+        </div>
       </div>
         
     )
 }
 
-export default Signup
+export default Signup;

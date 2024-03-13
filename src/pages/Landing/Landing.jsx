@@ -10,11 +10,8 @@ const Landing = () =>{
 <>
 <NavBar2/>
 <div className='landing-section'>
-<div className='image-container'>
-   
-<img className="land-img" src={Image}/>
 <h1>TRAVEL THE 47 COUNTY WITH US!</h1>
-</div>
+
 <Link to='/discover'>
         <button className="discover-button">
           <p>Discover</p>

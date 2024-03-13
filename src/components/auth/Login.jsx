@@ -13,7 +13,7 @@ const Login = () => {
   async function signInWithEmail(e) {
     e.preventDefault();
     
-    const { data, error } = await supabase.auth.signInWithPassword({
+    const { data,error } = await supabase.auth.signInWithPassword({
       email: email,
       password: password,
     })
@@ -22,6 +22,7 @@ const Login = () => {
         console.log(error)
     } else {
         console.log(data)
+     
         window.location.href = '/'
     }
   }
