@@ -8,7 +8,6 @@ import Discover from  './pages/Discover.jsx'
 import Account from './pages/Account.jsx'
 import County from './pages/County.jsx'
 import { AuthProvider } from "./components/context/authContext.jsx";
-
 import Login from './components/auth/Login.jsx'
 import Register from './components/auth/Register.jsx'
 import Landing from './pages/Landing/Landing.jsx'

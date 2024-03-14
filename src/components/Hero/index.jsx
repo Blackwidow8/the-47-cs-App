@@ -2,6 +2,7 @@ import "./index.css";
 import Image from '../../assets/giraffecenter.png'
 import { Link } from "react-router-dom";
 import { useContext } from "react";
+
 import { AuthContext } from "../context/authContext";
 
 const Hero = () => {

@@ -39,17 +39,17 @@ const Signup = ()=> {
           <form onSubmit={signUpNewUser}>
             <h2>Register</h2>
             <label>FirstName:</label>
-            <input type="firstname" name="first-name" value={FirstName} onChange={(e)=>setFirstName(e.target.value)} />
+            <input  className="input-box" type="firstname" name="first-name" value={FirstName} onChange={(e)=>setFirstName(e.target.value)} />
             <label>LastName:</label>
-            <input type="Lastname" name="last-name" value={LastName} onChange={(e)=>setLastName(e.target.value)} />
+            <input className="input-box"  type="Lastname" name="last-name" value={LastName} onChange={(e)=>setLastName(e.target.value)} />
             <label>Email:</label>
-            <input type="email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <input className="input-box" type="email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
             <label>Number:</label>
-            <input type="number" name="number" value={number} onChange={(e)=>setNumber(e.target.value)} />
+            <input className="input-box" type="number" name="number" value={number} onChange={(e)=>setNumber(e.target.value)} />
             <label>Password</label>
-            <input type="password" name="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
+            <input className="input-box" type="password" name="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
             <label>ConfirmPassword:</label>
-            <input type="confirmpassword" name="confirmpassword" value={confirmpassword} onChange={(e)=>setConfirmPassword(e.target.value)} />
+            <input className="input-box" type="confirmpassword" name="confirmpassword" value={confirmpassword} onChange={(e)=>setConfirmPassword(e.target.value)} />
 
             <button type="submit">Submit</button>
             </form>

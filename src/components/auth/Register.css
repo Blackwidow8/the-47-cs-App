@@ -20,9 +20,48 @@
 
         display: flex;
         margin-top:40px;
-        margin-left: 160px;
+       
         justify-content: center;
         gap: 30%;
         padding-top: 150px;
+        h2{
+                text-align: center;
+                font-weight: 600;
+                font-size:larger
+            }
+                    .input-box{
+                       height: 50px;
+                       width: 250px; 
+                       box-sizing: border-box;
+                       outline: invert;
+                       border: solid;
+                       
+                       
+                    }
+                    .submit-btn{
+                        padding: 10px;
+                        width:200px;
+                        background-color: rgb(177, 155,220);
+                        cursor: pointer;
+                        border-radius: 5px;
+                        border:none;
+                        margin-top: 20px;
+                    }
+                    .submit-btn:hover{
+                        background-color: rgb(196, 171, 247);
+                    }           
 }
+.right-container{
+        width:50%;
+        
+        .login-img{
+            object-fit: contain;
+            float: left;
+            border-radius:20px;
+            >img{
+                height: 700px;
+            }
+            
+                }
+    }
 }
