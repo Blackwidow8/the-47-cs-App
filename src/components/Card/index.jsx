@@ -17,14 +17,8 @@ const Card=() =>{
         <h2>{county.name}</h2>
         <p>Capital: {county.capital}</p>
         <p>Code: {county.code}</p>
-        <h3>Sub-counties:</h3>
-        <ul>
-          {county.sub_counties.map((subCounty, index) => (
-            <li key={index}>{subCounty}</li>
-          ))}
-        </ul>
-        <Link to={`/county/${county.code}`} state={county.name}>Show County</Link>
 
+        <Link to={`/county/${county.code}`} className='button' state={county.name}>Show County</Link>
       </li>
       </div>
       

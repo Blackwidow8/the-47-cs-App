@@ -1,7 +1,8 @@
 import {Link, useLocation} from  'react-router-dom'
 import React, { useEffect, useState } from "react";
+import "./index.css"
 
-import Cards from '../components/Card';
+import Cards from '../../components/Card';
  
 const County = ()=>{
     const [bnbs, setbnbs ] = useState([])
@@ -26,12 +27,15 @@ const County = ()=>{
         fetchItems()
     }, [])
     return (
-        <div>
+        <div className='container'>
             {
                 bnbs.map((bnb, index)=>{
                     return (
-                        <div key={index}>
-                            {bnb.name}
+                        <div className='card'  key={index}>
+                            <div>
+                                <img />
+                            </div>
+                            <p>{bnb.name}</p>
                         </div>
                     )
                 })
